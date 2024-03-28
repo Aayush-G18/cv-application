@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function BlankPage({className}) {
   return (
-    <p className={className}>page</p>
+    <div className={className}>
+      Page
+    </div>
   )
 }

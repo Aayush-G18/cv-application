@@ -6,8 +6,10 @@ import {
 } from "@/components/ui/accordion"
 
 import React from 'react'
+import { useForm } from "react-hook-form"
 
-function ComplexForm({className}) {
+function ComplexForm({ className }) {
+  const form=useForm
   return (
     <Accordion className={className} type="multiple" collapsible>
       <AccordionItem value="item-1">
