@@ -1,8 +1,15 @@
+"use client"
 import ComplexForm from '@/components/pages/complexform/page';
 import BlankPage from '@/components/pages/pagelayout/page'
-import React from 'react'
+import { useTheme } from 'next-themes';
+import React, { useEffect } from 'react'
 
 function Dashboard() {
+  const {resolvedTheme} = useTheme();
+  useEffect(() => {
+    console.log("Theme is:", resolvedTheme);
+  }, [resolvedTheme]);
+
   return (
     <div className='grid  min-h-screen p-2 text-4xl gap-4'>
       <div className='flex justify-center'>CV Maker</div>
