@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { Button } from "@/components/ui/button"
 
 import React from 'react'
 
@@ -34,7 +35,8 @@ function ComplexForm({ className }) {
     <AccordionContent>
       <CustomForm topic="skills"/>
     </AccordionContent>
-  </AccordionItem>    
+      </AccordionItem>
+  <Button>Reset</Button>    
 </Accordion>
   )
 }
